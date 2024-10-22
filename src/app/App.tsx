@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Index from ".";
-import ListMovies from "./listMovies";
+import Index from "./index";
+import ListMovies from "./list-movies";
 import RootLayout from "@/layout/RootLayout";
 import NotFound from "./NotFound";
 

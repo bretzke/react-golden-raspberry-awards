@@ -10,7 +10,7 @@ export default function RootLayout() {
           <Link to="/list-movies">List</Link>
         </nav>
       </aside>
-      <section>
+      <section className="p-4 grow flex justify-center">
         <Outlet />
       </section>
     </div>
