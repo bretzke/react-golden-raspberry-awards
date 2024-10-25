@@ -8,17 +8,12 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { MovieProps } from "@/interfaces/Movie";
 import { baseApi } from "@/lib/axios";
 import { useEffect, useState } from "react";
 
-interface MovieWinners {
-  id: number;
-  year: number;
-  title: string;
-}
-
 export default function MovieWinnersByYearTable() {
-  const [movieWinners, setMovieWinners] = useState<MovieWinners[]>([]);
+  const [movieWinners, setMovieWinners] = useState<MovieProps[]>([]);
   const [filteredYear, setFilteredYear] = useState<number>(0);
 
   useEffect(() => {
